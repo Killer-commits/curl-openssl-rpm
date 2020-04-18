@@ -49,19 +49,8 @@ This version doesnot need any shared library (.so files , shared object files) ,
 
 -  ```curl -V``` verify by checking version 
 
+![Install and Uninstalaling curl-static-openssl-rpm Demo Image](../../blob/master/screenshot/curl-staic-openssl-demo.JPG)
 
-![Install and Uninstalaling curl-static-openssl-rpm Demo Image](https://github.com/killer-commits/curl-openssl-rpm/screenshot/curl-staic-openssl-demo.JPG)
-
-
-#### Uninstall curl-static-openssl
-```sudo rpm -i curl-static-openssl-7.69.1-R1.x86_64.rpm```
-
-During in uninstall process last file , the following things happens
-- The original cURL at ```/opts/killer-commits/curl_backup/curl``` is moved back to ```/usr/bin/```
-
-- ```curl -V``` verify by checking version 
-
-![Uninstall curl-openssl-rpm Demo Image](https://github.com/killer-commits/curl-openssl-rpm/screenshot/curl-openssl-uninstall-demo.JPG)
 
 ## curl-openssl
 
@@ -85,6 +74,8 @@ Please follow the order for installation as given below
 
 - ```curl -V``` verify by checking version 
 
+![Install curl-openssl-rpm Demo Image](../../blob/master/screenshot/curl-openssl-install-demo.JPG)
+
 ### Uninstalling curl-openssl
 
 - ```sudo rpm -e libcurl-openssl-7.69.1-R2.x86_64```
@@ -98,6 +89,8 @@ Please follow the order for installation as given below
     - The original libcurl files from ```/opts/killer-commits/curlbackup/lib64/libcurl.s*```  are moved back ```/usr/lib64/```.
 
 - ```curl -V``` verify by checking version 
+
+![Uninstall curl-openssl-rpm Demo Image](../../blob/master/screenshot/curl-openssl-uninstall-demo.JPG)
 
 If you want to build please follow the below instruction 
 
