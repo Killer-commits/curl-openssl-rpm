@@ -25,11 +25,9 @@ To resolve this issue with my limited knowledge, cURL with openssl was build
 
 # Download
 
-
-
 ## curl-static-openssl
+**[curl-static-openssl Download here](https://github.com/Killer-commits/curl-openssl-rpm/releases/tag/R1) **
 
-### curl-static-openssl Download [### Download  here](https://github.com/Killer-commits/curl-openssl-rpm/releases/tag/R1)
 This version doesnot need any shared library (.so files , shared object files) , just a single binary which will help to overcome the issue. Most of the case
 
 #### Installing curl-static-openssl
@@ -55,7 +53,7 @@ This version doesnot need any shared library (.so files , shared object files) ,
 
 ## curl-openssl
 
-### curl-openssl Download [### Download  here](https://github.com/Killer-commits/curl-openssl-rpm/releases/tag/R2)
+**[### curl-openssl Download  here](https://github.com/Killer-commits/curl-openssl-rpm/releases/tag/R2)**
 This cURL is build with enable share , which means the shared object are required to run ```libcurl-openssl```.
 
 Addiditonally a  ```libcurl-openssl-devel``` file will be there  which is used to build another application from libcurl , for exapmle :  ```pycurl with openssl  for python``` or for ```php``` you can use this one.
