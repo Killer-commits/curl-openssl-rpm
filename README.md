@@ -25,10 +25,11 @@ To resolve this issue with my limited knowledge, cURL with openssl was build
 
 # Download
 
-Please visit the  [the release page](https://github.com/killer-commits/curl-openssl/releases) and download the packages for your system. 
-There are two version 
+
 
 ## curl-static-openssl
+
+### curl-static-openssl Download [### Download  here](https://github.com/Killer-commits/curl-openssl-rpm/releases/tag/R1)
 This version doesnot need any shared library (.so files , shared object files) , just a single binary which will help to overcome the issue. Most of the case
 
 #### Installing curl-static-openssl
@@ -54,6 +55,7 @@ This version doesnot need any shared library (.so files , shared object files) ,
 
 ## curl-openssl
 
+### curl-openssl Download [### Download  here](https://github.com/Killer-commits/curl-openssl-rpm/releases/tag/R2)
 This cURL is build with enable share , which means the shared object are required to run ```libcurl-openssl```.
 
 Addiditonally a  ```libcurl-openssl-devel``` file will be there  which is used to build another application from libcurl , for exapmle :  ```pycurl with openssl  for python``` or for ```php``` you can use this one.
@@ -78,15 +80,15 @@ Please follow the order for installation as given below
 
 ### Uninstalling curl-openssl
 
-- ```sudo rpm -e libcurl-openssl-7.69.1-R2.x86_64```
-
-- ```sudo rpm -e libcurl-openssl-devel-7.69.1-R2.x86_64```
-
 - ```sudo rpm -e curl-openssl-7.69.1-R2.x86_64```
     
     During in uninstalling last file , the following things happens
     - The original cURL at ```/opts/killer-commits/curlbackup/bin/curl``` is moved back o ```/usr/bin/```
     - The original libcurl files from ```/opts/killer-commits/curlbackup/lib64/libcurl.s*```  are moved back ```/usr/lib64/```.
+
+- ```sudo rpm -e libcurl-openssl-devel-7.69.1-R2.x86_64```
+
+- ```sudo rpm -e libcurl-openssl-7.69.1-R2.x86_64```
 
 - ```curl -V``` verify by checking version 
 
